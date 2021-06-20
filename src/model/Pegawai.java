@@ -13,6 +13,40 @@ public class Pegawai {
     String Status;
     int gol;
     int LamaKerja;
+    String User;
+    int Pass;
+
+    // constructor (1)
+    public Pegawai(String idPegawai, String nama, LocalDate tglLahir, String alamat, String noTelp, String status, int gol, int lamaKerja) {
+        this.idPegawai = idPegawai;
+        this.nama = nama;
+        this.tglLahir = tglLahir;
+        this.Alamat = alamat;
+        this.NoTelp = noTelp;
+        this.Status = status;
+        this.gol = gol;
+        this.LamaKerja = lamaKerja;
+    }
+    // constructor (1)
+    public Pegawai() {
+        System.out.println("      Data Gaji Pegawai        ");
+        System.out.println("===============================");
+    }
+    // constructor (2)
+    public Pegawai(String User)
+    {
+        this.User = User;
+        System.out.println("===============================");
+        System.out.println("Username: "+this.User);
+        System.out.println("===============================");
+    }
+    // construktor (3)
+
+    public Pegawai(int pass) {
+        Pass = pass;
+        System.out.println("Password: "+this.Pass);
+        System.out.println("===============================");
+    }
 
     // method menghitung usia pegawai (1)
     public int hitungUsia(){
