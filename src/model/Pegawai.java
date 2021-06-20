@@ -97,7 +97,20 @@ public class Pegawai {
     public void setPass(int pass) {
         Pass = pass;
     }
-
+    // method overloading (26)
+    public boolean thnks(String nama)
+    {
+        String thnks ="Trimakasih Sudah berkerja disini, "+this.nama;
+        System.out.println(thnks);
+        return false;
+    }
+    // method overloading (27)
+    public boolean user(String user)
+    {
+        String thnks ="Username, "+this.User;
+        System.out.println(user);
+        return false;
+    }
     // constructor (1)
     public Pegawai(String idPegawai, String nama, LocalDate tglLahir, String alamat, String noTelp, String status, int gol, int lamaKerja) {
         this.idPegawai = idPegawai;
