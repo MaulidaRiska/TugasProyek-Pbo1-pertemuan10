@@ -58,6 +58,15 @@ public class Dosen extends Pegawai{
         BidangKeahlian = bidangKeahlian;
     }
 
+    // method overriding (9)
+    public boolean thnks(String nama) {
+        return super.thnks(nama);
+    }
+    // method overriding (10)
+    public boolean user(String user) {
+        return super.user(user);
+    }
+
     // Method menghitung tunjangan pegawai dosen (1)
     long hitungTunjDosen(){
         long tunjDosen = 1000000;
@@ -99,4 +108,3 @@ public class Dosen extends Pegawai{
     }
 
 }
-
