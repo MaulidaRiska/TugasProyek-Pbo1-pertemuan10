@@ -1,57 +1,66 @@
 package model;
 
-import java.time.LocalDate;
-
+import java.time.*;
 public class main {
 
     public static void main(String[] args) {
 
         // object constructor 2
-        Pegawai p4 = new Pegawai("Naila");
+        Pegawai p1 = new Pegawai("NadaSalsa");
+        // object constructor 3
+        Pegawai p2 = new Pegawai(1234);
+        // object data pegawai (constructor 1)
+        Pegawai p3 = new Pegawai();
+        p3.setIdPegawai("PB01");
+        p3.setNama("Nada Salsabila");
+        p3.setTglLahir(LocalDate.of(1992, 8, 7));
+        p3.setAlamat("Jalan Sidoarjo No. 45");
+        p3.setNoTelp("081250827979");
+        p3.setStatus("Menikah");
+        p3.setGol(1);
+        p3.setLamaKerja(4);
+        p3.printPegawai();
+        p3.thnks("Nada Salsabila");
+        p3.user("NadaSalsabila");
+
+        // object constructor 2
+        Pegawai p4 = new Pegawai("IkaR");
         // object constructor 3
         Pegawai p5 = new Pegawai(67819);
         // object data pegawai (constructor 1)
-        Pegawai p3 = new Pegawai();
-         p3.idPegawai="PB01";
-         p3.nama="Nada Salsabila";
-         p3.tglLahir=LocalDate.of(1992, 8, 7);
-         p3.Alamat="Jalan Sidoarjo No. 45";
-         p3.NoTelp="081250827979";
-         p3.Status="Menikah";
-         p3.gol=1;
-         p3.LamaKerja=4;
-         p3.printPegawai();
+        Pegawai p6 = new Pegawai();
+        p6.setIdPegawai("PB02");
+        p6.setNama("Riska Sari");
+        p6.setTglLahir(LocalDate.of(1991, 10, 13));
+        p6.setAlamat("Jalan Pramuka No. 45");
+        p6.setNoTelp("081250827979");
+        p6.setStatus("Belum Menikah");
+        p6.setGol(2);
+        p6.setLamaKerja(6);
+        p6.printPegawai();
+        p6.thnks("Riska Sari");
+        p6.user("IkaR");
 
         // object constructor 2
-        Pegawai p1 = new Pegawai("Naila");
+        Pegawai p7 = new Pegawai("NabaQ");
         // object constructor 3
-        Pegawai p2 = new Pegawai(67819);
-        // object data pegawai (constructor 1)
-        Pegawai p6 = new Pegawai();
-        p6.idPegawai="PB01";
-        p6.nama="Nada Salsabila";
-        p6.tglLahir=LocalDate.of(1992, 8, 7);
-        p6.Alamat="Jalan Sidoarjo No. 45";
-        p6.NoTelp="081250827979";
-        p6.Status="Menikah";
-        p6.gol=1;
-        p6.LamaKerja=4;
-        p6.printPegawai();
-
+        Pegawai p9 = new Pegawai(0121);
         // object data pegawai dosen (constructor 1)
         Dosen d1 = new Dosen();
-        d1.idPegawai="PB03";
-        d1.nama="Naba Quratu";
-        d1.tglLahir=LocalDate.of(1993, 03, 23);
-        d1.Alamat="Jalan Antasari No.22";
-        d1.NoTelp="081250830108";
-        d1.Status="Menikah";
-        d1.gol=1;
-        d1.LamaKerja=8;
-        d1.nidn="200901759";
-        d1.Jurusan="Teknologi Informatika";
-        d1.BidangKeahlian="Aplikasi Java";
+        d1.setIdPegawai("PB03");
+        d1.setNama("Naba Quratu");
+        d1.setTglLahir(LocalDate.of(1993, 03, 23));
+        d1.setAlamat("Jalan Antasari No.22");
+        d1.setNoTelp("081250830108");
+        d1.setStatus("Menikah");
+        d1.setGol(1);
+        d1.setLamaKerja(8);
+        d1.setNidn("200901759");
+        d1.setJurusan("Teknologi Informatika");
+        d1.setBidangKeahlian( "Aplikasi Java");
         d1.printPegawai();
+        d1.thnks("Naba Quratu");
+        d1.user("NabaQ");
 
     }
 }
